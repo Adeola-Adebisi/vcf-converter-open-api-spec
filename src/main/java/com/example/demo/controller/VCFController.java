@@ -17,23 +17,29 @@ public class VCFController extends RequestContextProvider implements VcfApi {
       throws Exception {
     return ResponseEntity.ok(VcfApi.super.getAccountInformation(instid).getBody());
   }
+
   @Override
   public ResponseEntity<AuthenticationResponseDto> authentication(
-          AuthenticationDto authenticationDto) throws Exception {
+      AuthenticationDto authenticationDto) throws Exception {
     return ResponseEntity.ok(VcfApi.super.authentication(authenticationDto).getBody());
   }
+
   @Override
   public ResponseEntity<CardholderInformationResponseDto> getCardholderInformation(String instid)
-          throws Exception {
+      throws Exception {
     return ResponseEntity.ok(VcfApi.super.getCardholderInformation(instid).getBody());
   }
+
   @Override
   public ResponseEntity<CompanyInformationResponseDto> getCompanyInformation(String instid)
-          throws Exception {
+      throws Exception {
     return ResponseEntity.ok(VcfApi.super.getCompanyInformation(instid).getBody());
   }
+
   @Override
-  public ResponseEntity<TransactionInformationResponseDto> getTransactionInformation(String instid, Integer startDate, Integer endDate) throws Exception {
-    return ResponseEntity.ok(VcfApi.super.getTransactionInformation(instid, startDate, endDate).getBody());
+  public ResponseEntity<TransactionInformationResponseDto> getTransactionInformation(
+      String instid, Integer startDate, Integer endDate) throws Exception {
+    return ResponseEntity.ok(
+        VcfApi.super.getTransactionInformation(instid, startDate, endDate).getBody());
   }
 }
