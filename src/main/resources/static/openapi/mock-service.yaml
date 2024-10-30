@@ -690,22 +690,25 @@ components:
           example: 41
         companyName:
           type: string
-          example: 1186
+          example: Coca-cola
         isoCountryCode:
           type: string
-          example: Adeola
+          example: 566
         fiscalYearDate:
           type: string
-          example: Adebisi
+          example: 12/31
         cardType:
           type: string
-          example: 566
+          example: 1
         issuerName:
           type: string
-          example: 566
+          example: Sterling Bank
         organizationHierarchyManagementIndicator:
           type: string
-          example: 566
+          example: 1
+        effectiveDate:
+          type: string
+          example: 2021-10-20 00:00:00  
     CardholderInformationResponse:
       type: object
       properties:
