@@ -1,0 +1,18 @@
+{
+  "useTags": true,
+  "useSpringBoot3": true,
+  "java8": true,
+  "dateLibrary": "java8-localdatetime",
+  "unhandledException": true,
+  "openApiNullable": false,
+  "interfaceOnly": true,
+  "delegatePattern": true,
+  "packageName": "com.example.demo.service",
+  "apiPackage": "com.example.demo.service.api",
+  "modelPackage": "com.example.demo.service.model",
+  "typeMapping": {
+    "float": "java.math.BigDecimal",
+    "double": "java.math.BigDecimal",
+    "Boolean": "boolean"
+  }
+}
