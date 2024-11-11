@@ -2,10 +2,10 @@ openapi: 3.0.0
 servers:
   # Added by API Auto Mocking Plugin
   - description: SwaggerHub API Auto Mocking
-    url: https://virtserver.swaggerhub.com/adeolaadebisi/VCF-CONVERTER/1.0.0
+    url: https://virtserver.swaggerhub.com/adeolaadebisi/VCF-CONVERTER/1.0.2
 info:
   description: This is a simple API
-  version: "1.0.0"
+  version: 1.0.2
   title: Simple Inventory API
   contact:
     email: you@your-company.com
@@ -93,6 +93,31 @@ paths:
                 $ref: '#/components/schemas/AccountInformationResponse'
         '400':
           description: bad input parameter
+  /companyBillingReportingPeriod:
+    get:
+      tags:
+        - VCF
+      summary: searches inventory
+      operationId: getReportingCycleInformation
+      description: |
+        By passing in the appropriate options, you can search for
+        available inventory in the system
+      parameters:
+        - in: query
+          name: instid
+          description: pass an optional search string for looking up inventory
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReportingCycleInformationResponse'
+        '400':
+          description: bad input parameter        
   /transactions:
     get:
       tags:
@@ -483,6 +508,32 @@ components:
         isoCountryCode:
           type: string
           example: 566
+    ReportingCycleInformationResponse:
+      type: object
+      properties:
+        companyBillingReportingPeriod:
+            $ref: '#/components/schemas/ReportingCycleInformation'
+    ReportingCycleInformation:
+      type: object
+      properties:
+        companyIdentification:
+          type: integer
+          example: 41
+        period: 
+          type: string
+          example: "24335"
+        cardType:
+          example: "1"
+          type: string
+        startDate:
+          type: string
+          example: "01-11-2024"
+        endDate:
+          type: string
+          example: "30-11-2024"
+        periodCompleteIndicator:
+          type: string
+          example: "0"
     AccountInformationResponse:
       type: object
       properties:
