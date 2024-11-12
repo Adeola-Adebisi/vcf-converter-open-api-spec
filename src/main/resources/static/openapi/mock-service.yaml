@@ -527,10 +527,10 @@ components:
           type: string
         startDate:
           type: string
-          example: "12-11-2024"
+          example: "01-11-2024"
         endDate:
           type: string
-          example: "11-12-2024"
+          example: "30-11-2024"
         periodCompleteIndicator:
           type: string
           example: "0"
