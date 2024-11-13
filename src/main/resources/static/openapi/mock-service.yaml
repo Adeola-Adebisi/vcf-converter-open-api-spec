@@ -482,7 +482,12 @@ components:
               firstName: CHARGE 1
               lastName: CHARGE
               isoCountryCode: '566'
-          
+            - companyIdentification: '41'
+              cardholderIdentification: '1215'
+              firstName: Test 1
+              lastName: Tester
+              isoCountryCode: '566'
+     #added cardholder     
 
     CardholderInformation:
       type: object
