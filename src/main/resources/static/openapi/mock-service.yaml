@@ -257,7 +257,7 @@ components:
               tokenid: '4564'
               accountNumber: '5078683012532895232'
               sequenceNumber: '5078683012532895232'
-            - loadtransactioncode: '4'
+            - loadtransactioncode: '5'
               contractid: '16338'
               postingDate: '2024-09-01 00:00:00'
               retrievalrefnumber: '000000249434'
