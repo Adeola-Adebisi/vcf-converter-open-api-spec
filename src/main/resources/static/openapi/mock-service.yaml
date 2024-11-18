@@ -246,7 +246,7 @@ components:
               billingamount: '200.00'
               sourcecurrencycode: '566'
               merchantcategorycode: '6011'
-              transactiontypecode: '00'
+              transactiontypecode: '31'
               period: '24305'
               billingcurrencycode: '566'
               taxamount: null
