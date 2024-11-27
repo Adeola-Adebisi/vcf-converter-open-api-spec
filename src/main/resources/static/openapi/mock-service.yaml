@@ -215,8 +215,8 @@ components:
               supplierstateprovincecode: null
               supplierisocountrycode: '566'
               supplierpostalcode: null
-              sourceamount: '200000.00'
-              billingamount: '200000.00'
+              sourceamount: '200001.10'
+              billingamount: '200001.10'
               sourcecurrencycode: '566'
               merchantcategorycode: null
               transactiontypecode: '00'
